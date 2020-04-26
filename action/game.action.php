@@ -16,6 +16,10 @@ function action_game_default() {
   $name = $_SESSION['name'];
   $member_id = $_SESSION['member_id'];
   $group_id = $_SESSION['group_id'];
+  $invite_url = app_url_full("join", "", [
+    "group_id" => $group_id,
+    "q" => $_SESSION['hash'],
+  ]);
   // group
   $r = db_get("SELECT * FROM groups WHERE".
     " group_id=?", [$group_id]);
@@ -33,6 +37,7 @@ function action_game_default() {
     "js_getMembers" => $js_getMembers,
     "js_addscore" => $js_addscore,
     "game_js" => "static/game.js?m=$game_js_mtime",
+    "invite_url" => $invite_url,
   ]);
 }
 

@@ -17,6 +17,15 @@
   &nbsp;&nbsp;&nbsp;
   <span id="timeLast">---</span>
 </div>
+<br>
+<div class="box">
+  <input id="invite_url" type="text"
+         style="width:98%;background-color:#f0f0f0;color:black" 
+         readonly
+         value="{{$invite_url}}"><br>
+  <button class="pure-button"
+    onclick="js_copy_url()">招待URLをコピー</button>
+</div>
 
 <script>
   const js_getMembers = "{{$js_getMembers | raw}}";

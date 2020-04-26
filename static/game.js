@@ -14,7 +14,8 @@ $(function() {
 });
 
 function checkMembers() {
-  $.get(js_getMembers, function(src){
+  const url = js_getMembers + "&r=" + now();
+  $.get(url, function(src){
     showScore(src);
   })
 }
@@ -108,7 +109,7 @@ function addscore(member_id) {
   }
 
   // addscore
-  const url = js_addscore + "&member_id=" + member_id;
+  const url = js_addscore + "&member_id=" + member_id + "&r=" + now();
   $(`#btn${member_id}`).prop("disabled", true);
   $.get(url, function(src) {
     $(`#btn${member_id}`).prop("disabled", false);
@@ -129,6 +130,12 @@ function showTime() {
   $("#timeLast").html(
     z2(d.getHours()) + ":" + z2(d.getMinutes()) + ":" + z2(d.getSeconds())
   );
+}
+
+function js_copy_url() {
+  document.getElementById("invite_url").select();
+  document.execCommand("copy");
+  alert('コピーしました');
 }
 
 
