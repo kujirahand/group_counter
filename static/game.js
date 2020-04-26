@@ -5,6 +5,12 @@ let timeLast = 0;
 $(function() {
   checkMembers();
   watchScore();
+  // reflesh button
+  const rbtn = $("#reflesh_btn");
+  rbtn.click(function() {
+    rbtn.prop("disabled", true);
+    checkMembers();
+  });
 });
 
 function checkMembers() {
@@ -33,6 +39,7 @@ function showScore(src) {
     members = JSON.parse(src);
     timeLast = now();
     showTime();
+    $("#reflesh_btn").prop("disabled", false);
   } catch (e) {
     console.log(e);
     console.log(src);
@@ -92,7 +99,7 @@ function addscore(member_id) {
   // check myself
   if (member_id == self_id) {
     const info = $('#info');
-    info.html(self_name + 'さん、自分にいいね！はできません。');
+    info.html('自分にいいね！はできません。');
     info.css('backgroundColor', 'yellow');
     setTimeout(function() {
       info.css('backgroundColor', 'white');
