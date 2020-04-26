@@ -1,0 +1,251 @@
+// +-----------------------------
+// | haiku
+// +-----------------------------
+
+
+// for PC
+#frame:
+    margin-left: auto
+    margin-right: auto
+    width: 767px
+
+// for Smart phone
+@media screen and (max-width:767px):
+  #frame:
+    width: 100%
+// ------
+body:
+  background-color: white
+  color: black 
+
+.topinfo:
+  padding: 4px
+  margin: 4px
+  font-size: 0.8em
+  color: gray
+
+.local:
+  background-color: yellow
+  color: black
+  font-size: 0.8em
+
+// TITLE HEADER
+#title_div:
+  background-color: #c0c0c0
+  margin: 0
+  padding: 0
+  height: 50px
+  width: 100%
+  background-image: url(image/wallpaper/sakura.png)
+
+.title_btn:
+  float: right
+  background-color: gray
+
+// MENU
+.menu:
+  ul:
+    padding: 0
+    margin: 0
+    list-style-type: none
+    li:
+      text-align: right
+      margin: 2px
+      a:
+        width: 200px
+        border-bottom: solid 1px silver
+
+h1:
+  background-color: rgba(255, 100, 255, 0.9)
+  color: black
+  padding: 8px
+
+h2:
+  border-bottom: solid 1px silver
+
+h4:
+  border-bottom: solid 1px silver
+  margin: 8px
+  font-size: 1.2em
+
+.error_box:
+  margin: 8px 
+  padding: 1em
+  font-size: 1.3em
+  color: black 
+  border: solid 1px red 
+  background-color: rgb(255, 230, 230)
+  h2:
+    color: red
+
+#login_form:
+  margin: 8px
+  padding: 24px
+  border: solid 1px silver
+  legend:
+    color: gray
+
+#item_show-send_fav:
+  form:
+    padding: 12px
+
+.box:
+  margin: 8px
+  padding: 8px
+  border: solid 1px silver
+  background-image: url(image/wallpaper/sakura.png)
+  p:
+    line-height: 2.7em
+    font-size: 1em
+
+.box_n:
+  margin: 4px
+  padding: 10px
+
+.infobox:
+  margin: 8px
+  padding: 8px
+  border: solid 1px silver
+  color: gray
+
+.kaisetu:
+  color: gray
+  padding: 12px
+  padding-bottom: 20px
+
+.error:
+  color: red
+
+.msgbox:
+  margin: 12px
+  padding: 1em
+  color: black
+  border: solid 1px silver
+  h2:
+    color: gray 
+
+.clear:
+  clear:both
+
+#item_post:
+  textarea:
+    width: 99%
+
+#item_show:
+  padding: 0px
+
+.box_border:
+  padding: 12px
+  margin: 12px
+  border: 1px solid silver
+
+.haiku_body:
+  padding: 12px 12px 12px 30px
+  margin: 12px
+  background-color: #f0f0f0
+  border-radius: 4px
+  line-height: 2em
+  font-size: 1.4em
+  border-right: 1px solid #c0c0c0
+  border-bottom: 1px solid #c0c0c0
+  background-image: url(image/wallpaper/sakura.png)
+
+.haiku_date:
+  font-size: 0.7em
+  color: gray
+  text-align: right
+
+.itemlist:
+  .box:
+    border: 1px solid silver
+    margin: 8px 8px 16px 8px
+    padding: 8px 8px 8px 2em 
+    border-left: 20px solid #e0e0e0 
+    background-color: #ffffff
+    a:
+      text-decoration: none
+      color: black
+    .body:
+      font-size: 1.1em
+      line-height: 1.9em
+    .info:
+      font-size: 0.8em
+      color: gray 
+      text-align: right
+      span:
+        font-size: 0.7em
+        color: silver
+    .theme_title:
+      border-bottom: 1px dotted silver
+      font-size: 0.9em
+      padding: 6px
+      a:
+        color: gray
+
+.show_box:
+  padding: 8px
+
+.sensei:
+  font-size: 0.8em
+  color: silver
+
+#point_sel:
+  height: 2.6em
+
+.comment_box:
+  border-left: 20px solid #f0f0f0
+  border-bottom: 1px solid #c0c0c0
+  padding: 8px
+  margin: 4px
+  .info:
+    text-align: right
+    color: gray
+    a:
+      text-decoration: none
+      color: #404090
+
+.infoline:
+  color: silver
+  font-size: 0.8em
+
+.users_list:
+  line-height: 3em;
+
+.edit_right:
+  text-align: right
+  font-size: 0.8em
+  border-top: 1px dotted silver
+  margin-top: 6px
+  padding-top: 6px
+
+.star:
+  color: orange;
+  font-size: 0.8em;
+
+.theme_box:
+  background-color: white
+  padding: 0.5em
+  font-size: 1.1em
+  .title_line:
+    border-bottom: 1px solid silver
+    font-weight: bold
+    font-size: 1.1em
+  .body:
+    padding: 1em
+
+#bbsform:
+  textarea:
+    width: 99%
+
+.bbs_box:
+  bbs_line:
+    font-size: 1em
+
+.score_box:
+  text-align: right
+
+.score:
+  font-size: 2em
+  color: #a88
+
+

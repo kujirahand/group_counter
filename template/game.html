@@ -1,0 +1,32 @@
+{{include 'header_c.html'}}
+
+<div class="box">
+  【お題】{{$title}}
+</div>
+
+<div id="info" class="box">
+  {{$name}}さんは既に参加中です。
+</div>
+
+<div id="members" class="box_n">
+  <!-- members here -->
+</div>
+
+<div class="box">
+  <button class="pure-button"
+    onclick="checkMembers()">🔁更新</button>
+  &nbsp;&nbsp;&nbsp;
+  <span id="timeLast">---</span>
+</div>
+
+<script>
+  const js_getMembers = "{{$js_getMembers | raw}}";
+  const js_addscore = "{{$js_addscore | raw}}";
+  const self_id = {{$member_id}};
+  const self_name = "{{$name}}";
+</script>
+<script src="{{$game_js}}"></script>
+
+{{include 'footer_c.html'}}
+
+

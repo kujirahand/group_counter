@@ -1,0 +1,20 @@
+{{include 'header_c.html'}}
+
+<div class="box">
+  <h4>グループ(ID:{{$group_id}})に参加します</h4>
+  <div class="box">
+    {{$title}}
+  </div>
+
+  <h4>名前を入力して[参加]ボタンを押してください。</h4>
+  <form class="pure-form pure-form-stacked" method="POST"
+      action="{{e:echo_url('join','go')}}">
+    <label for="name">名前:</label>
+    <input type="text" id="name" name="name" value="">
+    <input class="pure-button pure-button-primary" 
+      type="submit" value="参加">
+  </form>
+</div>
+
+{{include 'footer_c.html'}}
+

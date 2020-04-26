@@ -1,0 +1,6 @@
+user.config.php
+.DS_Store
+data/*.sqlite
+template_cache/*.php
+
+

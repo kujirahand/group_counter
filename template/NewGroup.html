@@ -1,0 +1,17 @@
+{{include 'header_c.html'}}
+
+<div class="box">
+  <h4>グループの作成</h4>
+  <form class="pure-form pure-form-stacked" method="POST"
+   action="{{e:echo_url('NewGroup', 'new')}}">
+    <label for="title">タイトル</label>
+    <input id="title" name="title" value=""/>
+    <label for="password">合い言葉</label>
+    <input id="password" name="password" type="text" value=""/>
+    <input type="submit" value="作成"
+     class="pure-button pure-button-primary">
+  </form>
+</div>
+
+{{include 'footer_c.html'}}
+

@@ -1,0 +1,30 @@
+{{include 'header_c.html'}}
+
+<div class="box">
+  <h4>グループを作成しました</h4>
+  <div>以下のURLを参加の皆さんにお伝えください。</div>
+  <div class="box">
+    <input id="group_url" type="text"
+     value="{{$group_url}}"
+     style="width:98%;"
+     onclick="this.select()">
+  </div>
+  <div class="box">
+    <a href="#" class="pure-button"
+      onclick="js_copy()">
+      クリップボードにコピー</a>
+    <a href="{{$group_url}}" class="pure-button">
+      URLを開く</a>
+  </div>
+</div>
+<script>
+function js_copy() {
+  const url = document.getElementById("group_url")
+  url.select()
+  document.execCommand("Copy")
+  alert("コピーしました")
+}
+</script>
+
+{{include 'footer_c.html'}}
+
